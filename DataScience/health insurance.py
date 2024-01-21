@@ -1,0 +1,95 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 8,
+   "id": "9a9ea3ab",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def health_insurance_premium(gender,DoB, smoker):\n",
+    "    if gender == \"male\":\n",
+    "        if 1990 <= DoB <= 2000:\n",
+    "            if smoker == \"yes\":\n",
+    "                print(\"Your annual premium is Rs 35000\")\n",
+    "            else:\n",
+    "                discount_price = 0.9 * 35000\n",
+    "                print(\"Your annual premium is Rs\", discount_price)\n",
+    "        elif 1970 <= DoB <= 1990:\n",
+    "            if smoker == \"yes\":\n",
+    "                print(\"Your annual premium is Rs 40000\")\n",
+    "            else:\n",
+    "                discount_price = 0.95 * 40000\n",
+    "                print(\"Your annual premium is Rs\", discount_price)\n",
+    "    elif gender == \"female\":\n",
+    "        if 1990 <= DoB <= 2000:\n",
+    "            if smoker == \"yes\":\n",
+    "                print(\"Your annual premium is Rs 30000\")\n",
+    "            else:\n",
+    "                discount_price = 0.9 * 30000\n",
+    "                print(\"Your annual premium is Rs\", discount_price)\n",
+    "        elif 1970 <= DoB <= 1990:\n",
+    "            if smoker == \"yes\":\n",
+    "                print(\"Your annual premium is Rs 35000\")\n",
+    "            else:\n",
+    "                discount_price = 0.95 * 35000\n",
+    "                print(\"Your annual premium is Rs\", discount_price)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 9,
+   "id": "54ec24b1",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Your annual premium is Rs 31500.0\n"
+     ]
+    }
+   ],
+   "source": [
+    "health_insurance_premium('male',1995,'no')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "4b6b9166",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "bf29db73",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.11.5"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
